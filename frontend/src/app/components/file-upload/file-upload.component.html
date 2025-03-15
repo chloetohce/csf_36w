@@ -1,0 +1,11 @@
+<p>{{isLoading}}</p>
+
+<form action="" enctype="multipart/form-data" [formGroup]="form" (submit)="upload()">
+    File: <input type="file" accept="image/*" #file (change)="onImageUpload($event)" >
+    <br>
+    <textarea id="" cols="30" rows="10" formControlName="comments">
+        
+    </textarea>
+
+    <button type="submit">Submit</button>
+</form>
