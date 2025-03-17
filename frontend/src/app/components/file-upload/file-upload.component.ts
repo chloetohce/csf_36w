@@ -28,7 +28,7 @@ export class FileUploadComponent implements OnInit {
       return;
     }
 
-    console.log(this.dataUri)
+    console.log(this.form.value)
     
     const formData = new FormData();
     formData.set('comments', this.form.get('comments')?.value);
